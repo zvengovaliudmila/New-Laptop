@@ -2,9 +2,31 @@
 
 string? input = Console.ReadLine();
 
-char GetThirdNumber = string number;
+bool ValidateInput(string input)
 {
-    return[2];
+    bool isNumber = int.TryParse(input, out int number);
+
+    if(!isNumber)
+    {
+       return false;
+    }
+    if (input.Length < 3)
+    {
+        return false;
+    }
+    return true;
+}
+char GetThirdNumber(string number)
+{
+    return number[2];
+}
+
+bool isValid = ValidateInput(input);
+
+if(!isValid)
+{
+Console.WriteLine("No Valid number");
+return;
 }
 
 char result = GetThirdNumber(input);
