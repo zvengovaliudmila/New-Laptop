@@ -20,3 +20,13 @@ void stringSize(string[] Words, string[] Words1)
        }
      }
 }
+
+void PrintArray(string[]Words)
+{
+   for(int i = 0; i < Words.Length; i++)
+   {
+
+    Console.WriteLine($"{Words[i]}, ")
+   }
+   Console.WriteLine();
+}
