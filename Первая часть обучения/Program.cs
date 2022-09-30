@@ -4,7 +4,7 @@
 коллекциями,лучше обойтись исключительно массивами.*/
 
 string[] Words = new string [4]{"Yes", "No", "Always", "Never"};
-string[] Words1 = new string (Words.Length);
+string[] Words1 = new string [Words.Length];
 
 
 
@@ -26,7 +26,13 @@ void PrintArray(string[]Words)
    for(int i = 0; i < Words.Length; i++)
    {
 
-    Console.WriteLine($"{Words[i]}, ")
+    Console.Write($"|{Words[i]}| ");
+
    }
    Console.WriteLine();
 }
+
+stringSize(Words, Words1);
+PrintArray(Words);
+Console.WriteLine();
+PrintArray(Words1);
