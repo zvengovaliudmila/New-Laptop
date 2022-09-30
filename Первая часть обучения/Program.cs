@@ -3,4 +3,5 @@
 либо задать на старте выполнения алгоритма.При решении не рекомендуется пользоваться
 коллекциями,лучше обойтись исключительно массивами.*/
 
-string [] Words = new string [4]{"Yes", "No", "Always", "Never"};
+string[] Words = new string [4]{"Yes", "No", "Always", "Never"};
+string[] Words1 = new string (Words.Length);
